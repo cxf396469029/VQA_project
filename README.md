@@ -18,4 +18,6 @@
 ## 开发工具、框架
 anaconda、keras、flask
 
-## 
+![horse](https://github.com/cxf396469029/VQA_project/raw/master/%E5%9B%BE%E7%89%872.png)
+![ball](https://github.com/cxf396469029/VQA_project/raw/master/%E5%9B%BE%E7%89%873.png)
+![socks](https://github.com/cxf396469029/VQA_project/raw/master/%E5%9B%BE%E7%89%874.png)
