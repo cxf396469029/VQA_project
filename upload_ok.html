@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>毕设演示</title>
+    <style>
+        body {
+            margin: 0;
+            width: 499px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        h1{margin-block-start: 0;}
+        @media screen and (max-width: 1024px){
+            body {width: 80%;}
+        }
+        @media screen and (max-width: 640px){
+            body {width: 100%;}
+        }
+        #inoinput{
+            width: 100%;
+            position: relative;
+        }
+        #inotab{
+            position: absolute;
+            top: 0;left:0;
+            width: 100%;
+        }
+        #inotab #inoqus{
+            background-color: white;
+            height: 30px;
+            border-radius: 24px;
+        }
+        #inotab #inoqus:hover{
+            box-shadow: 1px 0 4px 3px #aaa;
+        }
+        #inotab #inoqus input{
+            position: absolute;
+            top: 1px;
+            left: 24px;
+            width: 92%;
+            height: 25px;
+            border: none;
+            outline: none;
+        }
+        #inotab #inoqus button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 8%;
+            height: 30px;
+            border-radius: 0 8px 8px 0;
+            outline: none;    
+            background: transparent;
+            border: none;
+            flex: 0 0 auto;
+        }
+        #inotab #inoqus button .rINcab {
+            background: none;
+            color: #4285f4;
+            height: 24px;
+            width: 24px;
+            margin: auto;
+        }
+        #inotab #inoqus button .rINcab .z1asCe {
+            display: inline-block;
+            fill: currentColor;
+            height: 24px;
+            line-height: 24px;
+            position: relative;
+            width: 24px;
+        }
+        #imageino{
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        #imageino .outimg{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section id="inoinput">
+        <form id="inotab" action="" enctype='multipart/form-data' method='POST'>
+            <div id="inoqus">
+                <input type="text" name="name" value="" placeholder="ask your question："/>
+                <button type="submit"><div class="rINcab">
+                    <div class="z1asCe MZy1Rb"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div> 
+                </div></button>
+            </div>
+            <input id="file" type="file" name="file" style="display: none"/>
+        </form>
+        <div id="imageino"><label for="file">
+            <img class="outimg" src="./wallhaven-32962.jpg" alt="" srcset="">
+        </div>
+    </section>
+    <section id="information">
+    </section>
+    <div>    
+        <h1>{{userinput}}</h1>
+        <h1>{{user1.number1}} % {{user1.nickname1}}</h1>
+        <h1>{{user2.number2}} % {{user2.nickname2}}</h1>
+        <h1>{{user3.number3}} % {{user3.nickname3}}</h1>
+    </div>
+</body>
+</html>
