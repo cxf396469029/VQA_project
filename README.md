@@ -13,11 +13,12 @@
 提取图片特征 输入一张图片，转换格式输入到VGG模型提取特征
 提取文字特征 输入自然语言问题，用Glove模型将其转化为300维度向量
 融合特征     将处理好的文字特征放入LSTM中再与图片特征相融合
-得到结果     用softmax分类器得到最后的结果
+得到结果     将融合的特征放入多层感知机得到最后的结果
 
 ## 开发工具、框架
 anaconda、keras、flask
 
+## 结果站视
 ![horse](https://github.com/cxf396469029/VQA_project/raw/master/%E5%9B%BE%E7%89%872.png)
 ![ball](https://github.com/cxf396469029/VQA_project/raw/master/%E5%9B%BE%E7%89%873.png)
 ![socks](https://github.com/cxf396469029/VQA_project/raw/master/%E5%9B%BE%E7%89%874.png)
